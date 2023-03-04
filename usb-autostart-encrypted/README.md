@@ -6,6 +6,7 @@ Run `lsblk -f` to display UUID.
   
 ### The dead simple way
 Store the encryption key in plain-text in the go-file on your unraid drive.  
+Autostart the array as long as the second USB drive is inserted, no suspicious files to be found on it.  
 Add the following to `/boot/config/go`
 ```bash
 uuid=ED71-1D1D # <- replace with yours!
