@@ -18,4 +18,5 @@ Allows you to autostart the encrypted array so long as a second USB drive is plu
 
 # [Plex Transcoding to RAM](https://github.com/Lanjelin/unraid/tree/main/plex-ram-transcode#plex-transcoding-to-ram)
 
-Save your drives, let Plex use a (limited) part of your ram as cache when transcoding.
+Save your drives, let Plex use a (limited) part of your ram as cache when transcoding.  
+Found in [this thread](https://forums.unraid.net/topic/35878-plex-guide-to-moving-transcoding-to-ram/page/9/#comment-760549) by digging the unraid forums. 
