@@ -1,12 +1,15 @@
 # ZSH and oh-my-zsh with persistent history
 
 Installing everything, moving settings (.zshrc), history (.zsh_history), and oh-my-zsh (.oh-my-zsh) to the USB-drive, and symlinking them back to /root/.  
-Setting zsh as default shell by having bash launch it if it exists - to avoid terminal from breaking should Nerdtools fail for any reason, thus having bash as fallback.  
+Setting bash to seamlessly launch zsh if it exists - to avoid terminal from breaking should Nerdtools fail for any reason (bash as fallback terminal).  
 
 
 Install ZSH using the [NerdTools](https://forums.unraid.net/topic/129200-plug-in-nerdtools/) CA Plugin.  
 Install [Oh My ZSH](https://ohmyz.sh/) the regular way from the terminal  
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```  
+**Do not set zsh as default shell!**
 
 
 Run the following, line by line, to move all the files to the USB-drive, then symlinking them back to /root/
@@ -20,7 +23,8 @@ rm /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
 echo "if [ -f /bin/zsh ]; then /bin/zsh; exit; fi" >> /root/.bash_profile
 ```
 
-Add the following to the bottom of your `/boot/config/go` to symlink at boot
+Now restart your terminal session, it should now launch zsh.  
+If everything looks fine, add the following to the bottom of your `/boot/config/go` to symlink at boot
 ```bash
 # Launch zsh by default if its installed
 echo "if [ -f /bin/zsh ]; then /bin/zsh; exit; fi" >> /root/.bash_profile
