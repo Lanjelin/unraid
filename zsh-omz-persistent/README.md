@@ -11,7 +11,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```  
 **Do not set zsh as default shell!**
 
-
+### Run the following all-in-on script, _or_ follow the guide below
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Lanjelin/unraid/main/zsh-omz-persistent/unraid-zsh-omz.sh)"
+```
+  
+### Manual install
 Run the following, line by line, to move all the files to the USB-drive, then symlinking them back to /root/
 ```bash
 mkdir -p /boot/config/zsh
