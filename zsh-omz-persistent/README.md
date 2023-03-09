@@ -19,6 +19,7 @@ mv /root/.zshrc /boot/config/zsh/.zshrc
 cp -RL /root/.oh-my-zsh /boot/config/zsh/.oh-my-zsh && rm -rf /root/.oh-my-zsh
 ln -s /boot/config/zsh/.zshrc /root/.zshrc
 ln -s /boot/config/zsh/.oh-my-zsh /root/.oh-my-zsh
+cp /root/.zsh_history /boot/config/zsh/.zsh_history
 rm /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
 echo "if [ -f /bin/zsh ]; then /bin/zsh; exit; fi" >> /root/.bash_profile
 ```
