@@ -16,7 +16,7 @@ Run the following, line by line, to move all the files to the USB-drive, then sy
 ```bash
 mkdir -p /boot/config/zsh
 mv /root/.zshrc /boot/config/zsh/.zshrc 
-mv /root/.oh-my-zsh /boot/config/zsh/.oh-my-zsh
+cp -RL /root/.oh-my-zsh /boot/config/zsh/.oh-my-zsh && rm -rf /root/.oh-my-zsh
 ln -s /boot/config/zsh/.zshrc /root/.zshrc
 ln -s /boot/config/zsh/.oh-my-zsh /root/.oh-my-zsh
 rm /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
