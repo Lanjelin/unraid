@@ -11,7 +11,7 @@
 #
 echo
 if [ ! -f /bin/zsh ]; then echo "zsh not installed!"; exit; fi
-if [ ! -d /boot/config/zsh/.oh-my-zsh ]; then echo "oh-my-zsh not installed!"; exit; fi
+if [ ! -d /root/.oh-my-zsh ]; then echo "oh-my-zsh not installed!"; exit; fi
 echo "Moving files to USB Drive"
 mkdir -p /boot/config/zsh
 mv /root/.zshrc /boot/config/zsh/.zshrc 
