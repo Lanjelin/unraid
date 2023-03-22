@@ -11,7 +11,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```  
 **Do not set zsh as default shell!**
 
-### Run the following all-in-on script, _or_ follow the guide below
+###  Auto install
+Run the following all-in-on script, _or_ follow the guide below
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Lanjelin/unraid/main/zsh-omz-persistent/unraid-zsh-omz.sh)"
 ```
@@ -25,7 +26,7 @@ cp -RL /root/.oh-my-zsh /boot/config/zsh/.oh-my-zsh && rm -rf /root/.oh-my-zsh
 ln -s /boot/config/zsh/.zshrc /root/.zshrc
 ln -s /boot/config/zsh/.oh-my-zsh /root/.oh-my-zsh
 cp /root/.zsh_history /boot/config/zsh/.zsh_history
-rm /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
+rm -f /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
 echo "if [ -f /bin/zsh ]; then /bin/zsh; exit; fi" >> /root/.bash_profile
 ```
 
@@ -37,7 +38,7 @@ echo "if [ -f /bin/zsh ]; then /bin/zsh; exit; fi" >> /root/.bash_profile
 # Link zsh + omz config, zsh history
 ln -s /boot/config/zsh/.zshrc /root/.zshrc
 ln -s /boot/config/zsh/.oh-my-zsh /root/.oh-my-zsh
-ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
+rm -f /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
 ```
 
 If you're using tmux, add the following to your .zshrc to make it work properly with zsh  
