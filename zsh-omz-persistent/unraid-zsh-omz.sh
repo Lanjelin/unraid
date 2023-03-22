@@ -19,7 +19,7 @@ cp -RL /root/.oh-my-zsh /boot/config/zsh/.oh-my-zsh && rm -rf /root/.oh-my-zsh
 ln -s /boot/config/zsh/.zshrc /root/.zshrc
 ln -s /boot/config/zsh/.oh-my-zsh /root/.oh-my-zsh
 cp /root/.zsh_history /boot/config/zsh/.zsh_history
-rm /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
+rm -f /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history
 echo "if [ -f /bin/zsh ]; then /bin/zsh; exit; fi" >> /root/.bash_profile
 echo 'if [ ! "$TMUX" = "" ]; then export TERM=xterm-256color; fi' >> /root/.zshrc
 echo "Updating /boot/config/go"
@@ -28,6 +28,6 @@ echo 'echo "if [ -f /bin/zsh ]; then /bin/zsh; exit; fi" >> /root/.bash_profile'
 echo '# Link zsh + omz config, zsh history' >> /boot/config/go
 echo 'ln -s /boot/config/zsh/.zshrc /root/.zshrc' >> /boot/config/go
 echo 'ln -s /boot/config/zsh/.oh-my-zsh /root/.oh-my-zsh' >> /boot/config/go
-echo 'ln -s /boot/config/zsh/.zsh_history /root/.zsh_history' >> /boot/config/go
+echo 'rm -f /root/.zsh_history && ln -s /boot/config/zsh/.zsh_history /root/.zsh_history' >> /boot/config/go
 echo
-echo "Done, relaunch terminal to use zsh"
+echo "Done, relaunch terminal to use the updated zsh"
