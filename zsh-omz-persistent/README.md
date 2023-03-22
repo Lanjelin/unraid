@@ -3,6 +3,7 @@
 Installing everything, moving settings (.zshrc), history (.zsh_history), and oh-my-zsh (.oh-my-zsh) to the USB-drive, and symlinking them back to /root/.  
 Setting bash to seamlessly launch zsh if it exists - to avoid terminal from breaking should Nerdtools fail for any reason (bash as fallback terminal).  
 
+Caution: omz update will fail on FAT32-formatted drives due to a symlinked theme and plugin.
 
 Install ZSH using the [NerdTools](https://forums.unraid.net/topic/129200-plug-in-nerdtools/) CA Plugin.  
 Install [Oh My ZSH](https://ohmyz.sh/) the regular way from the terminal  
