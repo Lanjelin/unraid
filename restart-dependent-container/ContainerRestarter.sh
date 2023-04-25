@@ -21,10 +21,10 @@ then
   if [ $(docker container restart $CONTAINER_RESTART) == $CONTAINER_RESTART ]
   then
     echo "$(TIMESTAMP) $CONTAINER_RESTART successfully restarted"
-	/usr/local/emhttp/plugins/dynamix/scripts/notify -e ContainerRestarter -s ContainerRestarter -d "$CONTAINER_RESTART successfully restarted" -i "normal"
+    /usr/local/emhttp/plugins/dynamix/scripts/notify -e ContainerRestarter -s ContainerRestarter -d "$CONTAINER_RESTART successfully restarted" -i "normal"
   else
     echo "$(TIMESTAMP) error while restarting $CONTAINER_RESTART"
-	/usr/local/emhttp/plugins/dynamix/scripts/notify -e ContainerRestarter -s ContainerRestarter -d "Error while restarting $CONTAINER_RESTART" -i "alert"
+    /usr/local/emhttp/plugins/dynamix/scripts/notify -e ContainerRestarter -s ContainerRestarter -d "Error while restarting $CONTAINER_RESTART" -i "alert"
   fi
 else
   echo "$(TIMESTAMP) $CONTAINER_CHECK started $((($UPTIME)/60)) minutes ago, doing nothing."
