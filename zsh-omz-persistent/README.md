@@ -26,7 +26,7 @@ mkdir -p /mnt/user/appdata/zsh
 cp -r /root/.oh-my-zsh /mnt/user/appdata/zsh/.oh-my-zsh" && rm -rf /root/.oh-my-zsh
 echo "export HISTFILE=/mnt/user/appdata/zsh/.zsh_history" >> /boot/config/.zshrc
 sed -i -e "s|\$HOME/.oh-my-zsh|/mnt/user/appdata/zsh/.oh-my-zsh|" /boot/config/.zshrc 
-mv /root/.zsh_history $OMZPATH/.zsh_history
+mv /root/.zsh_history /mnt/user/appdata/zsh/.zsh_history
 echo 'if [ -d /mnt/user/appdata/zsh/.oh-my-zsh ]; then ( if [ -f /bin/zsh ]; then /bin/zsh; exit; fi ) fi' >> /root/.bash_profile
 ```
 
