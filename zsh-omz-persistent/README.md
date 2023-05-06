@@ -27,7 +27,10 @@ cp -r /root/.oh-my-zsh /mnt/user/appdata/zsh/.oh-my-zsh" && rm -rf /root/.oh-my-
 echo "export HISTFILE=/mnt/user/appdata/zsh/.zsh_history" >> /boot/config/.zshrc
 sed -i -e "s|\$HOME/.oh-my-zsh|/mnt/user/appdata/zsh/.oh-my-zsh|" /boot/config/.zshrc 
 mv /root/.zsh_history /mnt/user/appdata/zsh/.zsh_history
-echo 'if [ -d /mnt/user/appdata/zsh/.oh-my-zsh ]; then ( if [ -f /bin/zsh ]; then /bin/zsh; exit; fi ) fi' >> /root/.bash_profile
+```
+Edit the file `/root/.bash_profile` and add the following at the bottom
+```bash
+if [ -d /mnt/user/appdata/zsh/.oh-my-zsh ]; then ( if [ -f /bin/zsh ]; then /bin/zsh; exit; fi ) fi
 ```
 
 Now restart your terminal session, it should now launch zsh.  
