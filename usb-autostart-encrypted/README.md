@@ -55,5 +55,5 @@ One way to do this is by using the CA plugin [user scripts](https://forums.unrai
 Adding the following to a script, setting it to `At First Array Start Only` should do the trick.
 ```bash
 #!/bin/bash
-rm /boot/keyfile
+rm /root/keyfile
 ```
