@@ -30,14 +30,14 @@ mv /root/.zsh_history /mnt/user/appdata/zsh/.zsh_history
 ```
 Edit the file `/root/.bash_profile` and add the following at the bottom
 ```bash
-if [ -d /mnt/user/appdata/zsh/.oh-my-zsh ]; then ( if [ -f /bin/zsh ]; then /bin/zsh; exit; fi ) fi
+if [ -d /mnt/user/appdata/zsh/.oh-my-zsh ]; then if [ -f /bin/zsh ]; then /bin/zsh; exit; fi fi
 ```
 
 Now restart your terminal session, it should now launch zsh.  
 If everything looks fine, add the following to the bottom of your `/boot/config/go` to symlink at boot
 ```bash
 # Launch zsh by default if its installed, and .oh-my-zsh is available
-echo 'if [ -d /mnt/user/appdata/zsh/.oh-my-zsh ]; then ( if [ -f /bin/zsh ]; then /bin/zsh; exit; fi ) fi' >> /root/.bash_profile
+echo 'if [ -d /mnt/user/appdata/zsh/.oh-my-zsh ]; then if [ -f /bin/zsh ]; then /bin/zsh; exit; fi fi' >> /root/.bash_profile
 # Linking .zshrc to ~/.zshrc
 ln -s /boot/config/.zshrc /root/.zshrc
 ```

@@ -41,7 +41,7 @@ echo "if [ -d $OMZPATH/.oh-my-zsh ]; then ( if [ -f /bin/zsh ]; then /bin/zsh; e
 echo 'if [ ! "$TMUX" = "" ]; then export TERM=xterm-256color; fi' >> /root/.zshrc
 echo "Updating /boot/config/go"
 echo '# Launch zsh by default if its installed, and .oh-my-zsh is available' >> /boot/config/go
-echo "echo \"if [ -d $OMZPATH/.oh-my-zsh ]; then ( if [ -f /bin/zsh ]; then /bin/zsh; exit; fi ) fi\" >> /root/.bash_profile" >> /boot/config/go
+echo "echo \"if [ -d $OMZPATH/.oh-my-zsh ]; then if [ -f /bin/zsh ]; then /bin/zsh; exit; fi fi\" >> /root/.bash_profile" >> /boot/config/go
 echo '# Linking .zshrc to ~/.zshrc' >> /boot/config/go
 echo 'ln -s /boot/config/.zshrc /root/.zshrc' >> /boot/config/go
 echo
