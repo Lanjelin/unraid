@@ -22,4 +22,17 @@ Save your drives, let Plex use a (limited) part of your ram as cache when transc
 Found in [this thread](https://forums.unraid.net/topic/35878-plex-guide-to-moving-transcoding-to-ram/page/9/#comment-760549) by digging the unraid forums. 
 
 # [Container Restarter](https://github.com/Lanjelin/unraid/tree/main/restart-dependent-container)
+
 Restarts a specified container if another container is restarted, eg. by Watchtower using the CA plugin [user scripts](https://forums.unraid.net/topic/48286-plugin-ca-user-scripts/)
+
+# [unraid_vm_icons](https://github.com/Lanjelin/unraid_vm_icons)
+
+A fork of [SpaceinvaderOne](https://github.com/SpaceinvaderOne/unraid_vm_icons)s excellent Docker Container for adding VM icons to the Unraid VM Manager.  
+I wanted to go with a different approach, as I want as little as possible clutter among my containers.  
+All the icons have been compiled into a Slackware Package, that unRaid can install on boot.  
+This will install all the included icons, but not touch the original ones.  
+
+# [slackbuilder](https://github.com/Lanjelin/slackbuilder)
+
+A Docker image for building packages for slackware 15 / unraid.  
+
