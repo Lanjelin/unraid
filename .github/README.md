@@ -1,6 +1,6 @@
 
 <p align="center">scripts and tinkering for unraid</p>
-<p align="center">a place where I dump stuff I've written for [UnRaid](https://unraid.net/)</p>
+<p align="center">a place where I dump stuff I've written for <a href="https://unraid.net/">UnRaid</a></p>
   
 --- 
   
