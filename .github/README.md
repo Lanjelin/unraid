@@ -16,6 +16,10 @@ Setting zsh as default shell by having bash launch it if it exists - to avoid te
 A way to install [Homebrew](https://brew.sh/) - The Missing Package Manager for macOS (or Linux) on Unraid.  
 Guide to install everything, and have it persist through reboots.
 
+### [Unraid Fetch](https://github.com/Lanjelin/unraid/tree/main/unraid-fetch)
+
+Unraid logo ascii files for Neofetch and Fastfetch.
+
 ### [Autostart encrypted array using a second USB drive](https://github.com/Lanjelin/unraid/tree/main/usb-autostart-encrypted#autostart-encrypted-array-using-a-second-usb-drive)
 
 A writeup of my replies to this [reddit thread](https://www.reddit.com/r/unRAID/comments/10rwfp9/ideas_for_a_wife_friendly_encrypted_array_startup/).  
