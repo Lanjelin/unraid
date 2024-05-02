@@ -30,6 +30,11 @@ Allows you to autostart the encrypted array so long as a second USB drive is plu
 Save your drives, let Plex use a (limited) part of your ram as cache when transcoding.  
 Found in [this thread](https://forums.unraid.net/topic/35878-plex-guide-to-moving-transcoding-to-ram/page/9/#comment-760549) by digging the unraid forums.
 
+### [Container Watcher](https://github.com/Lanjelin/unraid/tree/main/container-watcher)
+
+Small bash script to be used with [user scripts](https://forums.unraid.net/topic/48286-plugin-ca-user-scripts/), to watch if containers are running.  
+If a container is stopped, it will attempt to start it, and send a warning notification if succeeded, or an error if failed.
+
 ### [Container Restarter](https://github.com/Lanjelin/unraid/tree/main/restart-dependent-container)
 
 Restarts a specified container if another container is restarted, eg. by Watchtower using the CA plugin [user scripts](https://forums.unraid.net/topic/48286-plugin-ca-user-scripts/)
