@@ -2,14 +2,17 @@
 
 Unraid logo for use with neofetch and fastfetch.
 
+![fastfetch](img/fast.png)  
+![neofetch](img/neo.png)
+
 ## How to use
 
-`neofetch --ascii neo-unraid-circle.txt --ascii_colors 1 7`
+`neofetch --ascii neo-unraid-circle.txt --ascii_colors 1 7`  
 `fastfetch --logo fast-unraid-wave-24.txt`
 
 ### Tools used
 
-[jp2a](https://github.com/cslarsen/jp2a)
+[jp2a](https://github.com/cslarsen/jp2a)  
 [jp2a2neofetch.py](https://gist.github.com/OpenBagTwo/54f209cbe8abbd04b9d5b0b880b6a8a2)
 
 #### Commands
