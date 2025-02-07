@@ -54,7 +54,11 @@ This will install all the included icons, but not touch the original ones.
 
 A Docker image for building packages for slackware 15 / unraid.
 
+### [nvim-docker](https://github.com/Lanjelin/nvim-docker)
+
+Run [NeoVim](https://neovim.io/) using docker, directly in the terminal, or in your favourite browser using the included [nerd-patched ttyd](https://github.com/Lanjelin/nerd-ttyd).  
+Image built on [Arch Linux](https://hub.docker.com/_/archlinux), includes several popular nvim distros.
+
 ### [AstroNvim Docker](https://github.com/Lanjelin/astronvim-docker)
 
-Run [AstroNvim](https://astronvim.com/) using docker, directly in your terminal, or in your favourite browser using the included [ttyd](https://github.com/tsl0922/ttyd).  
-Image built on [Alpine Linux](https://hub.docker.com/_/alpine), it inlcudes AstroNvim with [default user settings](https://github.com/AstroNvim/user_example), zsh with [oh-my-zsh](https://ohmyz.sh/), and ttyd.
+Deprecated really, use the above nvim-docker.
