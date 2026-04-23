@@ -43,11 +43,11 @@ echo "export HISTFILE=$OMZPATH/.zsh_history" >>/boot/config/.zshrc
 sed -i -e "s|\$HOME/.oh-my-zsh|${OMZPATH}/.oh-my-zsh|" /boot/config/.zshrc
 if [ -f /root/.zsh_history ]; then mv /root/.zsh_history $OMZPATH/.zsh_history; fi
 echo "Updating .bash_profile"
-echo "if [[ $- == *i* ]]; then if [ -d $OMZPATH/.oh-my-zsh ] && [ -x /bin/zsh ]; then /bin/zsh; exit; fi fi" >>/root/.bash_profile
+echo "if [[ \$- == *i* ]]; then if [ -d $OMZPATH/.oh-my-zsh ] && [ -x /bin/zsh ]; then /bin/zsh; exit; fi fi" >>/root/.bash_profile
 echo 'if [ ! "$TMUX" = "" ]; then export TERM=xterm-256color; fi' >>/root/.zshrc
 echo "Updating /boot/config/go"
 echo '# Launch zsh by default if its installed, and .oh-my-zsh is available' >>/boot/config/go
-echo "echo \"if [[ $- == *i* ]]; then if [ -d $OMZPATH/.oh-my-zsh ] && [ -x /bin/zsh ]; then /bin/zsh; exit; fi fi\" >>/root/.bash_profile" >>/boot/config/go
+echo "echo \"if [[ \$- == *i* ]]; then if [ -d $OMZPATH/.oh-my-zsh ] && [ -x /bin/zsh ]; then /bin/zsh; exit; fi fi\" >>/root/.bash_profile" >>/boot/config/go
 echo '# Linking .zshrc to ~/.zshrc' >>/boot/config/go
 echo 'ln -s /boot/config/.zshrc /root/.zshrc' >>/boot/config/go
 echo
