@@ -59,6 +59,11 @@ A Docker image for building packages for slackware 15 / unraid.
 Run [NeoVim](https://neovim.io/) using docker, directly in the terminal, or in your favourite browser using the included [nerd-patched ttyd](https://github.com/Lanjelin/nerd-ttyd).  
 Image built on [Arch Linux](https://hub.docker.com/_/archlinux), includes several popular nvim distros.
 
+### [proton-bridge-rootless](https://github.com/Lanjelin/proton-bridge-rootless)
+
+Protonmail-bridge built for Docker using [Alpine Linux](https://hub.docker.com/_/alpine) baseimage.  
+Built from [source](https://github.com/ProtonMail/proton-bridge/releases), and running rootless.
+
 ### [AstroNvim Docker](https://github.com/Lanjelin/astronvim-docker)
 
 Deprecated really, use the above nvim-docker.
