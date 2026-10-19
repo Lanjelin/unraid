@@ -2,7 +2,12 @@
 <p align="center">a place where I dump stuff I've written for <a href="https://unraid.net/">UnRaid</a></p>
   
 --- 
-  
+
+## Plugins
+
+### [unraid-icons](https://github.com/Lanjelin/unraid-icons)
+
+A shared icon library for Unraid VMs and Docker containers. Browse application logos and generic symbols, or import an image from a URL. Download an icon once and use it in either editor.
   
 ## Scripts
 
